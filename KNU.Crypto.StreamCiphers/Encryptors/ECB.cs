@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace KNU.Crypto.StreamCiphers.Encryptors
 {
-    public class EBC : BaseEncryptor
+    public class ECB : BaseEncryptor
     {
-        public EBC(byte[] key, bool parallel = true) : base(key, parallel) { }
+        public ECB(byte[] key, bool parallel = true) : base(key, parallel) { }
 
         public override int TransformBlock(byte[] inputBuffer, int inputOffset, int inputCount, byte[] outputBuffer, int outputOffset)
         {
